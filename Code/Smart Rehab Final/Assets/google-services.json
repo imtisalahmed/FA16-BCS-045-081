@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "876839232676",
+    "firebase_url": "https://fyp-2020-smart-rehab.firebaseio.com",
+    "project_id": "fyp-2020-smart-rehab",
+    "storage_bucket": "fyp-2020-smart-rehab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876839232676:android:137a4b17c64aeff3e27231",
+        "android_client_info": {
+          "package_name": "com.fyp.SmartRehab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876839232676-uqbb0ebkbmdi3b5kcsl3jdd420mus73t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr2m8IE9GIeVmUmAoeZk6W9ht_SpupHrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876839232676-uqbb0ebkbmdi3b5kcsl3jdd420mus73t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
