@@ -21,8 +21,11 @@ public class Menu_Handler_Script : MonoBehaviour
         C_Appointments_Panel,
         Mini_Appointments_Panel,
         InternetProblem_Panel,
-        Task_Management_Panel;
-    public GameObject PatientCreatedPopUp,AppointmentCreatedPopUp, PatientUpdatedPopUP, PatientDeletedPopUP,VIEW_APPOINTMENT_POPUP;
+        Task_Management_Panel,
+        View_Tasks_List_Panel,
+        Add_Task_to_Task_Plan_Panel;
+
+    public GameObject PatientCreatedPopUp,AppointmentCreatedPopUp, PatientUpdatedPopUP, PatientDeletedPopUP,VIEW_APPOINTMENT_POPUP, Task_Added_PopUp;
     public static Menu_Handler_Script instance;
     private void Awake()
     {
@@ -47,6 +50,8 @@ public class Menu_Handler_Script : MonoBehaviour
         Panels.Add(Mini_Appointments_Panel);
         Panels.Add(InternetProblem_Panel);
         Panels.Add(Task_Management_Panel);
+        Panels.Add(View_Tasks_List_Panel);
+        Panels.Add(Add_Task_to_Task_Plan_Panel);
         Open_Login_Panel_FUN();
        
     }
@@ -204,6 +209,22 @@ public class Menu_Handler_Script : MonoBehaviour
         RU_DoctorProfile_Panel.SetActive(true);
 
     }
+    public void Open_Add_Task_to_Task_Plan_Panel()
+    {
+
+        for (int i = 0; i < Panels.Count; i++)
+        {
+            Panels[i].SetActive(false);
+        }
+        Add_Task_to_Task_Plan_Panel.SetActive(true);
+        //Task_Added_PopUp.SetActive(false);
+    }
+    //public void Task_Added_PopUp()
+    //{
+        //Addnew_btn.SetActive(false);
+      //  Task_Added_PopUp.SetActive(true);
+    //}
+
     public void Internet_Problem_FUN()
     {
         InternetProblem_Panel.SetActive(true);
