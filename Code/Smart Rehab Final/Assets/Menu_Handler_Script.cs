@@ -23,7 +23,9 @@ public class Menu_Handler_Script : MonoBehaviour
         InternetProblem_Panel,
         Task_Management_Panel,
         View_Tasks_List_Panel,
-        Add_Task_to_Task_Plan_Panel;
+        Add_Task_to_Task_Plan_Panel,
+        AI_Scanning_Panel
+        ;
 
     public GameObject PatientCreatedPopUp,AppointmentCreatedPopUp, PatientUpdatedPopUP, PatientDeletedPopUP,VIEW_APPOINTMENT_POPUP, Task_Added_PopUp;
     public static Menu_Handler_Script instance;
@@ -51,6 +53,7 @@ public class Menu_Handler_Script : MonoBehaviour
         Panels.Add(InternetProblem_Panel);
         Panels.Add(Task_Management_Panel);
         Panels.Add(View_Tasks_List_Panel);
+        Panels.Add(AI_Scanning_Panel);
         Panels.Add(Add_Task_to_Task_Plan_Panel);
         Open_Login_Panel_FUN();
        
@@ -82,6 +85,16 @@ public class Menu_Handler_Script : MonoBehaviour
             Panels[i].SetActive(false);
         }
         Doctor_Profile_Panel.SetActive(true);
+    }
+    public void Open_AI_Scanning_Panel_FUN()
+    {
+
+        for (int i = 0; i < Panels.Count; i++)
+        {
+            Panels[i].SetActive(false);
+        }
+        Home_Panel.SetActive(true);
+        AI_Scanning_Panel.SetActive(true);
     }
     public void Open_Forgot_Password_Panel_FUN()
     {

@@ -174,10 +174,14 @@ public class Task_Handler_Script : MonoBehaviour
     }
     public void RestartScene()
     {
-        SceneManager.LoadScene("TaskScene");
+        SceneManager.LoadScene("TaskScene_1");
     }
     public void GenerateReport()
     {
         print("Add Function for report generation");
+    }
+    public void Home_Fun()
+        {
+        SceneManager.LoadScene("Main");
     }
 }
